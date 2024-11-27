@@ -134,7 +134,7 @@ Publish the website in the given URL.
 
 ## HOMEPAGE:
 
-![alt text](terminal-1.png)
+![alt text](<output screenshot.png>)
 
 
 ## RESULT:
