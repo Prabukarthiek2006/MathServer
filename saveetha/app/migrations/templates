@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Calculator</title>
+</head>
+<body>
+    <h1>Calculate Power (P = I²R)</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="current">Current (I): </label>
+        <input type="number" step="any" id="current" name="current" required>
+        <br><br>
+        <label for="resistance">Resistance (R): </label>
+        <input type="number" step="any" id="resistance" name="resistance" required>
+        <br><br>
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if result is not None %}
+        <h2>Result: 
+            {% if result|floatable %}
+                Power (P) = {{ result }} W
+            {% else %}
+                {{ result }}
+            {% endif %}
+        </h2>
+    {% endif %}
+</body>
+</html>
