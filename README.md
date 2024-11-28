@@ -133,8 +133,7 @@ Publish the website in the given URL.
 ![alt text](terminal.png)
 
 ## HOMEPAGE:
-
-![alt text](<output screenshot.png>)
+![alt text](<Screenshot 2024-11-28 173345.png>)
 
 
 ## RESULT:
